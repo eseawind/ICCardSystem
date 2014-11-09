@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>主页</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <link href="~/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/lib/ligerUI/js/core/base.js"></script>
+    <script src="~/lib/ligerUI/js/plugins/ligerLayout.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.zh-CN.js"></script>
+    <script src="~/Scripts/cookie.js"></script>
+    <script src="~/Scripts/time.js"></script>
+</head>
+<body>
+    <div id="layout1">
+        <div id="topContainer" position="top" ></div>
+        <div id="menuContainer" position="left"></div>
+        <div id="mainContainer" position="center"></div>
+        
+    </div>
+    <script>
+        $(function () {
+            $("#layout1").ligerLayout({
+                centerWidth: 768
+            });
+            $("#topContainer").load("home/top");
+            $("#menuContainer").load("home/menu");
+        });
+    </script>
+</body>
+</html>

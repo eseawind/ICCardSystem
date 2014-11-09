@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title></title>
+    <script src="~/Scripts/vlave.js"></script>
+    <script src="~/lib/ligerUI/js/core/base.js"></script>
+    <script src="~/lib/ligerUI/js/plugins/ligerGrid.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.PrintArea.js"></script>
+</head>
+
+<body>
+    <div id="myPrintArea">
+        <div>
+            <span style="display:inline-block;width:50px;">(补)</span>
+            <span style="display:inline-block;width:100px;">2007-1-12</span>
+            <span style="display:inline-block;width:100px;">1C00107011206</span>
+        </div>
+        <div>
+            <span style="display:inline-block;width:150px;">编号：00177937</span>
+            <span style="display:inline-block;width:100px;">姓名：张三</span>
+            <span style="display:inline-block;width:100px;">操作员：001</span>
+        </div>
+        <div>
+            <span>地址：金银湖环湖路群岛</span>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div>
+            <span style="display:inline-block;width:150px;"></span>
+            <span style="display:inline-block;width:150px;">80</span>
+            <span style="display:inline-block;width:150px;">184</span>
+        </div>
+        <div>
+            <span style="display:inline-block;width:100px;"></span>
+            <span style="display:inline-block;width:150px;">缴费金额 200</span>
+            <span style="display:inline-block;width:150px;">找零 16</span>
+        </div>
+        <br>
+        <br>
+        <div>
+            <span style="display:inline-block;width:150px;"></span>
+            <span style="display:inline-block;width:100px;">单价：<span>2.3</span></span>
+        </div>
+    </div>
+
+    <button id="btnPrint" type="button">打 印</button>
+    
+    <script type="text/javascript">
+        $(function () {
+            //打印
+            $("#btnPrint").bind("click", function (event) {
+                $("#myPrintArea").printArea();
+            });
+        });
+    </script>
+
+      
+
+</body>
+</html>

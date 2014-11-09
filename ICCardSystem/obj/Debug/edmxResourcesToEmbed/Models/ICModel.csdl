@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ICModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ICModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BqxxbSet" EntityType="ICModel.Bqxxb" />
+    <EntitySet Name="bhIndexSet" EntityType="ICModel.bhIndex" />
+    <EntitySet Name="bqjzhSet" EntityType="ICModel.bqjzh" />
+    <EntitySet Name="czrySet" EntityType="ICModel.czry" />
+    <EntitySet Name="djglSet" EntityType="ICModel.djgl" />
+    <EntitySet Name="hbjlSet" EntityType="ICModel.hbjl" />
+    <EntitySet Name="hmdSet" EntityType="ICModel.hmd" />
+    <EntitySet Name="hmdjsSet" EntityType="ICModel.hmdjs" />
+    <EntitySet Name="jdlxSet" EntityType="ICModel.jdlx" />
+    <EntitySet Name="wxdjSet" EntityType="ICModel.wxdj" />
+    <EntitySet Name="ycxxbSet" EntityType="ICModel.ycxxb" />
+    <EntitySet Name="yhxxSet" EntityType="ICModel.yhxx" />
+    <EntitySet Name="yyglSet" EntityType="ICModel.yygl" />
+    <EntitySet Name="yysjSet" EntityType="ICModel.yysj" />
+    <EntitySet Name="zxglSet" EntityType="ICModel.zxgl" />
+    <EntitySet Name="czjlbSet" EntityType="ICModel.czjlb" />
+    <EntitySet Name="Admins" EntityType="ICModel.Admin" />
+  </EntityContainer>
+  <EntityType Name="Bqxxb">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="gqzl" Type="Double" Nullable="false" />
+    <Property Name="bzm" Type="Double" Nullable="false" />
+    <Property Name="bcbqzl" Type="Double" Nullable="false" />
+    <Property Name="ybql" Type="Double" Nullable="false" />
+    <Property Name="bqwc" Type="Int32" Nullable="false" />
+    <Property Name="wxdbh" Type="Int32" Nullable="true" />
+  </EntityType>
+  <EntityType Name="bhIndex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bqjzh">
+    <Key>
+      <PropertyRef Name="djbh" />
+    </Key>
+    <Property Name="djbh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="wxdbh" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="bql" Type="Double" Nullable="false" />
+    <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="rq" Type="DateTime" Nullable="false" />
+    <Property Name="hh" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="czry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bh" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="xm" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="dm" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="opId" Type="Int32" Nullable="true" />
+    <Property Name="zcyy" Type="Int32" Nullable="false" />
+    <Property Name="FAgencyCode" Type="Int32" Nullable="true" />
+  </EntityType>
+  <EntityType Name="djgl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="yhlx" Type="Int32" Nullable="false" />
+    <Property Name="qj" Type="Decimal" Nullable="false" />
+    <Property Name="ms" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="ckxl" Type="Int32" Nullable="false" />
+    <Property Name="yxl" Type="Int32" Nullable="false" />
+    <Property Name="bx" Type="Int32" Nullable="false" />
+    <Property Name="gs" Type="Byte" Nullable="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="hbjl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="bzm" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="rq" Type="DateTime" Nullable="false" />
+    <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="wxdbh" Type="Int32" Nullable="true" />
+    <Property Name="dqqm" Type="Double" Nullable="true" />
+    <Property Name="dqbh" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="cxbz" Type="Int32" Nullable="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="hmd">
+    <Key>
+      <PropertyRef Name="f_id" />
+    </Key>
+    <Property Name="f_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="bql" Type="Int32" Nullable="false" />
+    <Property Name="hb" Type="Int32" Nullable="false" />
+    <Property Name="sdyh" Type="Int32" Nullable="false" />
+    <Property Name="yy" Type="Int32" Nullable="false" />
+    <Property Name="rq" Type="DateTime" Nullable="false" />
+    <Property Name="gqzl" Type="Int32" Nullable="false" />
+    <Property Name="sdczy" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="bz" Type="String" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="hmdjs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="jsrq" Type="DateTime" Nullable="false" />
+    <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="jsyy" Type="Int32" Nullable="false" />
+    <Property Name="bz" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="jdlx">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="jdlxId" Type="Int32" Nullable="false" />
+    <Property Name="ms" Type="String" Nullable="false" MaxLength="200" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="wxdj">
+    <Key>
+      <PropertyRef Name="wxdbh" />
+    </Key>
+    <Property Name="wxdbh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="yh" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="zz" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="tel" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="xlsj" Type="DateTime" Nullable="false" />
+    <Property Name="gzdm" Type="Int32" Nullable="false" />
+    <Property Name="hb" Type="Byte" Nullable="false" />
+    <Property Name="bzm" Type="Double" Nullable="true" />
+    <Property Name="BefBh" Type="String" Nullable="false" MaxLength="100" />
+    <Property Name="NowBh" Type="String" Nullable="false" MaxLength="100" />
+    <Property Name="wxyy" Type="Int32" Nullable="true" />
+    <Property Name="wxcs" Type="Int32" Nullable="true" />
+    <Property Name="syql" Type="Double" Nullable="true" />
+    <Property Name="bz" Type="String" Nullable="true" MaxLength="100" />
+    <Property Name="czy" Type="String" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ycxxb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="Int32" Nullable="true" />
+    <Property Name="hm" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="zz" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="tel" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="gqzl" Type="Int32" Nullable="true" />
+    <Property Name="zhgql" Type="Int32" Nullable="true" />
+    <Property Name="gqrq" Type="DateTime" Nullable="true" />
+    <Property Name="sfyc" Type="Int32" Nullable="true" />
+    <Property Name="rq" Type="DateTime" Nullable="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="yhxx">
+    <Key>
+      <PropertyRef Name="kpbh" />
+    </Key>
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="hm" Type="String" Nullable="true" MaxLength="50" />
+    <Property Name="zz" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="tel" Type="String" Nullable="true" MaxLength="50" />
+    <Property Name="bz" Type="String" Nullable="true" MaxLength="200" />
+    <Property Name="jdrq" Type="DateTime" Nullable="true" />
+    <Property Name="gqcs" Type="Int32" Nullable="true" />
+    <Property Name="gqzl" Type="Double" Nullable="true" />
+    <Property Name="jdczy" Type="String" Nullable="true" MaxLength="50" />
+    <Property Name="gqrq" Type="DateTime" Nullable="true" />
+    <Property Name="xbzm" Type="Double" Nullable="true" />
+    <Property Name="yhmm" Type="String" Nullable="true" MaxLength="50" />
+    <Property Name="bqzl" Type="Double" Nullable="true" />
+    <Property Name="bqcs" Type="Int32" Nullable="true" />
+    <Property Name="yhlx" Type="Int32" Nullable="true" />
+    <Property Name="sdbj" Type="Int32" Nullable="true" />
+    <Property Name="fkrq" Type="DateTime" Nullable="true" />
+    <Property Name="gqd" Type="String" Nullable="true" MaxLength="50" />
+    <Property Name="kpbh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="zxh" Type="String" Nullable="true" MaxLength="50" />
+    <Property Name="jdlx" Type="Int32" Nullable="true" />
+    <Property Name="yhkx" Type="Int32" Nullable="true" />
+    <Property Name="qtlx" Type="Int32" Nullable="true" />
+  </EntityType>
+  <EntityType Name="yygl">
+    <Key>
+      <PropertyRef Name="bh" />
+    </Key>
+    <Property Name="bh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ms" Type="String" Nullable="false" MaxLength="100" />
+    <Property Name="lx" Type="String" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yysj">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="skcs" Type="Int32" Nullable="false" />
+    <Property Name="skrq" Type="DateTime" Nullable="false" />
+    <Property Name="skje" Type="Decimal" Nullable="false" />
+    <Property Name="skql" Type="Double" Nullable="false" />
+    <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="bb" Type="Int32" Nullable="false" />
+    <Property Name="hh" Type="Int32" Nullable="false" />
+    <Property Name="sjkb" Type="Int32" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" />
+    <Property Name="gzzbh" Type="Int32" Nullable="false" />
+    <Property Name="lstbz" Type="Int32" Nullable="false" />
+    <Property Name="bqbz" Type="Int32" Nullable="false" />
+    <Property Name="zfbz" Type="Int32" Nullable="false" />
+    <Property Name="fpbh" Type="String" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="zxgl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="zxh" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="zxmc" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="dsdbh" Type="Int32" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="czjlb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="Int32" Nullable="false" />
+    <Property Name="skrq" Type="DateTime" Nullable="false" />
+    <Property Name="skje" Type="Decimal" Nullable="false" />
+    <Property Name="skql" Type="Int32" Nullable="false" />
+    <Property Name="fpbh" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="zfbz" Type="Int32" Nullable="false" />
+    <Property Name="jlyy" Type="Int32" Nullable="false" />
+    <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkId" Type="String" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="42" />
+    <Property Name="AdminLevel" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

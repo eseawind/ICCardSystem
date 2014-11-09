@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ICModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ICModelStoreContainer">
+    <EntitySet Name="BqxxbSet" EntityType="ICModel.Store.BqxxbSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bhIndexSet" EntityType="ICModel.Store.bhIndexSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bqjzhSet" EntityType="ICModel.Store.bqjzhSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="czrySet" EntityType="ICModel.Store.czrySet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="djglSet" EntityType="ICModel.Store.djglSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="hbjlSet" EntityType="ICModel.Store.hbjlSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="hmdSet" EntityType="ICModel.Store.hmdSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="hmdjsSet" EntityType="ICModel.Store.hmdjsSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="jdlxSet" EntityType="ICModel.Store.jdlxSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="wxdjSet" EntityType="ICModel.Store.wxdjSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ycxxbSet" EntityType="ICModel.Store.ycxxbSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="yhxxSet" EntityType="ICModel.Store.yhxxSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="yyglSet" EntityType="ICModel.Store.yyglSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="yysjSet" EntityType="ICModel.Store.yysjSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="zxglSet" EntityType="ICModel.Store.zxglSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="czjlbSet" EntityType="ICModel.Store.czjlbSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Admins" EntityType="ICModel.Store.Admins" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="BqxxbSet">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="gqzl" Type="float" Nullable="false" />
+    <Property Name="bzm" Type="float" Nullable="false" />
+    <Property Name="bcbqzl" Type="float" Nullable="false" />
+    <Property Name="ybql" Type="float" Nullable="false" />
+    <Property Name="bqwc" Type="int" Nullable="false" />
+    <Property Name="wxdbh" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="bhIndexSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ywbh" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bqjzhSet">
+    <Key>
+      <PropertyRef Name="djbh" />
+    </Key>
+    <Property Name="djbh" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="wxdbh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="bql" Type="float" Nullable="false" />
+    <Property Name="czy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="rq" Type="datetime" Nullable="false" />
+    <Property Name="hh" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="czrySet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="xm" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="dm" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="opId" Type="int" Nullable="true" />
+    <Property Name="zcyy" Type="int" Nullable="false" />
+    <Property Name="FAgencyCode" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="djglSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="yhlx" Type="int" Nullable="false" />
+    <Property Name="qj" Type="decimal" Nullable="false" />
+    <Property Name="ms" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ckxl" Type="int" Nullable="false" />
+    <Property Name="yxl" Type="int" Nullable="false" />
+    <Property Name="bx" Type="int" Nullable="false" />
+    <Property Name="gs" Type="tinyint" Nullable="true" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hbjlSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="bzm" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="rq" Type="datetime" Nullable="false" />
+    <Property Name="czy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="wxdbh" Type="int" Nullable="true" />
+    <Property Name="dqqm" Type="float" Nullable="true" />
+    <Property Name="dqbh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="cxbz" Type="int" Nullable="true" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="hmdSet">
+    <Key>
+      <PropertyRef Name="f_id" />
+    </Key>
+    <Property Name="f_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="bql" Type="int" Nullable="false" />
+    <Property Name="hb" Type="int" Nullable="false" />
+    <Property Name="sdyh" Type="int" Nullable="false" />
+    <Property Name="yy" Type="int" Nullable="false" />
+    <Property Name="rq" Type="datetime" Nullable="false" />
+    <Property Name="gqzl" Type="int" Nullable="false" />
+    <Property Name="sdczy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="bz" Type="nvarchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="hmdjsSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="jsrq" Type="datetime" Nullable="false" />
+    <Property Name="czy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="jsyy" Type="int" Nullable="false" />
+    <Property Name="bz" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="jdlxSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="jdlxId" Type="int" Nullable="false" />
+    <Property Name="ms" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="wxdjSet">
+    <Key>
+      <PropertyRef Name="wxdbh" />
+    </Key>
+    <Property Name="wxdbh" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="yh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="zz" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="tel" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="xlsj" Type="datetime" Nullable="false" />
+    <Property Name="gzdm" Type="int" Nullable="false" />
+    <Property Name="hb" Type="tinyint" Nullable="false" />
+    <Property Name="bzm" Type="float" Nullable="true" />
+    <Property Name="BefBh" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="NowBh" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="wxyy" Type="int" Nullable="true" />
+    <Property Name="wxcs" Type="int" Nullable="true" />
+    <Property Name="syql" Type="float" Nullable="true" />
+    <Property Name="bz" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="czy" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ycxxbSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="int" Nullable="true" />
+    <Property Name="hm" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="zz" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="tel" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="gqzl" Type="int" Nullable="true" />
+    <Property Name="zhgql" Type="int" Nullable="true" />
+    <Property Name="gqrq" Type="datetime" Nullable="true" />
+    <Property Name="sfyc" Type="int" Nullable="true" />
+    <Property Name="rq" Type="datetime" Nullable="true" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yhxxSet">
+    <Key>
+      <PropertyRef Name="kpbh" />
+    </Key>
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="hm" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="zz" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="tel" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="bz" Type="nvarchar" Nullable="true" MaxLength="200" />
+    <Property Name="jdrq" Type="datetime" Nullable="true" />
+    <Property Name="gqcs" Type="int" Nullable="true" />
+    <Property Name="gqzl" Type="float" Nullable="true" />
+    <Property Name="jdczy" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="gqrq" Type="datetime" Nullable="true" />
+    <Property Name="xbzm" Type="float" Nullable="true" />
+    <Property Name="yhmm" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="bqzl" Type="float" Nullable="true" />
+    <Property Name="bqcs" Type="int" Nullable="true" />
+    <Property Name="yhlx" Type="int" Nullable="true" />
+    <Property Name="sdbj" Type="int" Nullable="true" />
+    <Property Name="fkrq" Type="datetime" Nullable="true" />
+    <Property Name="gqd" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="kpbh" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="zxh" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="jdlx" Type="int" Nullable="true" />
+    <Property Name="yhkx" Type="int" Nullable="true" />
+    <Property Name="qtlx" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="yyglSet">
+    <Key>
+      <PropertyRef Name="bh" />
+    </Key>
+    <Property Name="bh" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ms" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="lx" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yysjSet">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="skcs" Type="int" Nullable="false" />
+    <Property Name="skrq" Type="datetime" Nullable="false" />
+    <Property Name="skje" Type="decimal" Nullable="false" />
+    <Property Name="skql" Type="float" Nullable="false" />
+    <Property Name="czy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="bb" Type="int" Nullable="false" />
+    <Property Name="hh" Type="int" Nullable="false" />
+    <Property Name="sjkb" Type="int" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="gzzbh" Type="int" Nullable="false" />
+    <Property Name="lstbz" Type="int" Nullable="false" />
+    <Property Name="bqbz" Type="int" Nullable="false" />
+    <Property Name="zfbz" Type="int" Nullable="false" />
+    <Property Name="fpbh" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="zxglSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="zxh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="zxmc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="dsdbh" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="czjlbSet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ywbh" Type="int" Nullable="false" />
+    <Property Name="skrq" Type="datetime" Nullable="false" />
+    <Property Name="skje" Type="decimal" Nullable="false" />
+    <Property Name="skql" Type="int" Nullable="false" />
+    <Property Name="fpbh" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="zfbz" Type="int" Nullable="false" />
+    <Property Name="jlyy" Type="int" Nullable="false" />
+    <Property Name="czy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkId" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="42" />
+    <Property Name="AdminLevel" Type="int" Nullable="false" />
+  </EntityType>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ICModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ICModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BqxxbSet" EntityType="ICModel.Bqxxb" />
+          <EntitySet Name="bhIndexSet" EntityType="ICModel.bhIndex" />
+          <EntitySet Name="bqjzhSet" EntityType="ICModel.bqjzh" />
+          <EntitySet Name="czrySet" EntityType="ICModel.czry" />
+          <EntitySet Name="djglSet" EntityType="ICModel.djgl" />
+          <EntitySet Name="hbjlSet" EntityType="ICModel.hbjl" />
+          <EntitySet Name="hmdSet" EntityType="ICModel.hmd" />
+          <EntitySet Name="hmdjsSet" EntityType="ICModel.hmdjs" />
+          <EntitySet Name="jdlxSet" EntityType="ICModel.jdlx" />
+          <EntitySet Name="wxdjSet" EntityType="ICModel.wxdj" />
+          <EntitySet Name="ycxxbSet" EntityType="ICModel.ycxxb" />
+          <EntitySet Name="yhxxSet" EntityType="ICModel.yhxx" />
+          <EntitySet Name="yyglSet" EntityType="ICModel.yygl" />
+          <EntitySet Name="yysjSet" EntityType="ICModel.yysj" />
+          <EntitySet Name="zxglSet" EntityType="ICModel.zxgl" />
+          <EntitySet Name="czjlbSet" EntityType="ICModel.czjlb" />
+          <EntitySet Name="Admins" EntityType="ICModel.Admin" />
+        </EntityContainer>
+        <EntityType Name="Bqxxb">
+          <Key>
+            <PropertyRef Name="fid" />
+          </Key>
+          <Property Name="fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="gqzl" Type="Double" Nullable="false" />
+          <Property Name="bzm" Type="Double" Nullable="false" />
+          <Property Name="bcbqzl" Type="Double" Nullable="false" />
+          <Property Name="ybql" Type="Double" Nullable="false" />
+          <Property Name="bqwc" Type="Int32" Nullable="false" />
+          <Property Name="wxdbh" Type="Int32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="bhIndex">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="bqjzh">
+          <Key>
+            <PropertyRef Name="djbh" />
+          </Key>
+          <Property Name="djbh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="wxdbh" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="bql" Type="Double" Nullable="false" />
+          <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="rq" Type="DateTime" Nullable="false" />
+          <Property Name="hh" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="czry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="bh" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="xm" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="dm" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="opId" Type="Int32" Nullable="true" />
+          <Property Name="zcyy" Type="Int32" Nullable="false" />
+          <Property Name="FAgencyCode" Type="Int32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="djgl" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="yhlx" Type="Int32" Nullable="false" />
+          <Property Name="qj" Type="Decimal" Nullable="false" />
+          <Property Name="ms" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="ckxl" Type="Int32" Nullable="false" />
+          <Property Name="yxl" Type="Int32" Nullable="false" />
+          <Property Name="bx" Type="Int32" Nullable="false" />
+          <Property Name="gs" Type="Byte" Nullable="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="hbjl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="bzm" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="rq" Type="DateTime" Nullable="false" />
+          <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="wxdbh" Type="Int32" Nullable="true" />
+          <Property Name="dqqm" Type="Double" Nullable="true" />
+          <Property Name="dqbh" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="cxbz" Type="Int32" Nullable="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="hmd">
+          <Key>
+            <PropertyRef Name="f_id" />
+          </Key>
+          <Property Name="f_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="bql" Type="Int32" Nullable="false" />
+          <Property Name="hb" Type="Int32" Nullable="false" />
+          <Property Name="sdyh" Type="Int32" Nullable="false" />
+          <Property Name="yy" Type="Int32" Nullable="false" />
+          <Property Name="rq" Type="DateTime" Nullable="false" />
+          <Property Name="gqzl" Type="Int32" Nullable="false" />
+          <Property Name="sdczy" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="bz" Type="String" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="hmdjs" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="jsrq" Type="DateTime" Nullable="false" />
+          <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="jsyy" Type="Int32" Nullable="false" />
+          <Property Name="bz" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="jdlx" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="jdlxId" Type="Int32" Nullable="false" />
+          <Property Name="ms" Type="String" Nullable="false" MaxLength="200" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="wxdj">
+          <Key>
+            <PropertyRef Name="wxdbh" />
+          </Key>
+          <Property Name="wxdbh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="yh" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="zz" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="tel" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="xlsj" Type="DateTime" Nullable="false" />
+          <Property Name="gzdm" Type="Int32" Nullable="false" />
+          <Property Name="hb" Type="Byte" Nullable="false" />
+          <Property Name="bzm" Type="Double" Nullable="true" />
+          <Property Name="BefBh" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="NowBh" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="wxyy" Type="Int32" Nullable="true" />
+          <Property Name="wxcs" Type="Int32" Nullable="true" />
+          <Property Name="syql" Type="Double" Nullable="true" />
+          <Property Name="bz" Type="String" Nullable="true" MaxLength="100" />
+          <Property Name="czy" Type="String" Nullable="true" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ycxxb" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ywbh" Type="Int32" Nullable="true" />
+          <Property Name="hm" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="zz" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="tel" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="gqzl" Type="Int32" Nullable="true" />
+          <Property Name="zhgql" Type="Int32" Nullable="true" />
+          <Property Name="gqrq" Type="DateTime" Nullable="true" />
+          <Property Name="sfyc" Type="Int32" Nullable="true" />
+          <Property Name="rq" Type="DateTime" Nullable="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="yhxx" >
+          <Key>
+            <PropertyRef Name="kpbh" />
+          </Key>
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="hm" Type="String" Nullable="true" MaxLength="50" />
+          <Property Name="zz" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="tel" Type="String" Nullable="true" MaxLength="50" />
+          <Property Name="bz" Type="String" Nullable="true" MaxLength="200" />
+          <Property Name="jdrq" Type="DateTime" Nullable="true" />
+          <Property Name="gqcs" Type="Int32" Nullable="true" />
+          <Property Name="gqzl" Type="Double" Nullable="true" />
+          <Property Name="jdczy" Type="String" Nullable="true" MaxLength="50" />
+          <Property Name="gqrq" Type="DateTime" Nullable="true" />
+          <Property Name="xbzm" Type="Double" Nullable="true" />
+          <Property Name="yhmm" Type="String" Nullable="true" MaxLength="50" />
+          <Property Name="bqzl" Type="Double" Nullable="true" />
+          <Property Name="bqcs" Type="Int32" Nullable="true" />
+          <Property Name="yhlx" Type="Int32" Nullable="true" />
+          <Property Name="sdbj" Type="Int32" Nullable="true" />
+          <Property Name="fkrq" Type="DateTime" Nullable="true" />
+          <Property Name="gqd" Type="String" Nullable="true" MaxLength="50" />
+          <Property Name="kpbh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="zxh" Type="String" Nullable="true" MaxLength="50" />
+          <Property Name="jdlx" Type="Int32" Nullable="true" />
+          <Property Name="yhkx" Type="Int32" Nullable="true" />
+          <Property Name="qtlx" Type="Int32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="yygl">
+          <Key>
+            <PropertyRef Name="bh" />
+          </Key>
+          <Property Name="bh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ms" Type="String" Nullable="false" MaxLength="100" />
+          <Property Name="lx" Type="String" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="yysj">
+          <Key>
+            <PropertyRef Name="fid" />
+          </Key>
+          <Property Name="fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="skcs" Type="Int32" Nullable="false" />
+          <Property Name="skrq" Type="DateTime" Nullable="false" />
+          <Property Name="skje" Type="Decimal" Nullable="false" />
+          <Property Name="skql" Type="Double" Nullable="false" />
+          <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="bb" Type="Int32" Nullable="false" />
+          <Property Name="hh" Type="Int32" Nullable="false" />
+          <Property Name="sjkb" Type="Int32" Nullable="false" />
+          <Property Name="time" Type="DateTime" Nullable="false" />
+          <Property Name="gzzbh" Type="Int32" Nullable="false" />
+          <Property Name="lstbz" Type="Int32" Nullable="false" />
+          <Property Name="bqbz" Type="Int32" Nullable="false" />
+          <Property Name="zfbz" Type="Int32" Nullable="false" />
+          <Property Name="fpbh" Type="String" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="zxgl" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="zxh" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="zxmc" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="dsdbh" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="czjlb" >
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ywbh" Type="Int32" Nullable="false" />
+          <Property Name="skrq" Type="DateTime" Nullable="false" />
+          <Property Name="skje" Type="Decimal" Nullable="false" />
+          <Property Name="skql" Type="Int32" Nullable="false" />
+          <Property Name="fpbh" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="zfbz" Type="Int32" Nullable="false" />
+          <Property Name="jlyy" Type="Int32" Nullable="false" />
+          <Property Name="czy" Type="String" Nullable="false" MaxLength="50" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkId" Type="String" Nullable="false" MaxLength="10" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="20" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="42" />
+          <Property Name="AdminLevel" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ICModelStoreContainer" CdmEntityContainer="ICModelContainer">
+    <EntitySetMapping Name="BqxxbSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.Bqxxb)">
+        <MappingFragment StoreEntitySet="BqxxbSet">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="bzm" ColumnName="bzm" />
+          <ScalarProperty Name="bcbqzl" ColumnName="bcbqzl" />
+          <ScalarProperty Name="ybql" ColumnName="ybql" />
+          <ScalarProperty Name="bqwc" ColumnName="bqwc" />
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bhIndexSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.bhIndex)">
+        <MappingFragment StoreEntitySet="bhIndexSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bqjzhSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.bqjzh)">
+        <MappingFragment StoreEntitySet="bqjzhSet">
+          <ScalarProperty Name="djbh" ColumnName="djbh" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+          <ScalarProperty Name="bql" ColumnName="bql" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+          <ScalarProperty Name="hh" ColumnName="hh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="czrySet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.czry)">
+        <MappingFragment StoreEntitySet="czrySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="bh" ColumnName="bh" />
+          <ScalarProperty Name="xm" ColumnName="xm" />
+          <ScalarProperty Name="dm" ColumnName="dm" />
+          <ScalarProperty Name="opId" ColumnName="opId" />
+          <ScalarProperty Name="zcyy" ColumnName="zcyy" />
+          <ScalarProperty Name="FAgencyCode" ColumnName="FAgencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="djglSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.djgl)">
+        <MappingFragment StoreEntitySet="djglSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="yhlx" ColumnName="yhlx" />
+          <ScalarProperty Name="qj" ColumnName="qj" />
+          <ScalarProperty Name="ms" ColumnName="ms" />
+          <ScalarProperty Name="ckxl" ColumnName="ckxl" />
+          <ScalarProperty Name="yxl" ColumnName="yxl" />
+          <ScalarProperty Name="bx" ColumnName="bx" />
+          <ScalarProperty Name="gs" ColumnName="gs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hbjlSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.hbjl)">
+        <MappingFragment StoreEntitySet="hbjlSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="bzm" ColumnName="bzm" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+          <ScalarProperty Name="dqqm" ColumnName="dqqm" />
+          <ScalarProperty Name="dqbh" ColumnName="dqbh" />
+          <ScalarProperty Name="cxbz" ColumnName="cxbz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hmdSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.hmd)">
+        <MappingFragment StoreEntitySet="hmdSet">
+          <ScalarProperty Name="f_id" ColumnName="f_id" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="bql" ColumnName="bql" />
+          <ScalarProperty Name="hb" ColumnName="hb" />
+          <ScalarProperty Name="sdyh" ColumnName="sdyh" />
+          <ScalarProperty Name="yy" ColumnName="yy" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="sdczy" ColumnName="sdczy" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hmdjsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.hmdjs)">
+        <MappingFragment StoreEntitySet="hmdjsSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="jsrq" ColumnName="jsrq" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="jsyy" ColumnName="jsyy" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jdlxSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.jdlx)">
+        <MappingFragment StoreEntitySet="jdlxSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="jdlxId" ColumnName="jdlxId" />
+          <ScalarProperty Name="ms" ColumnName="ms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wxdjSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.wxdj)">
+        <MappingFragment StoreEntitySet="wxdjSet">
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="yh" ColumnName="yh" />
+          <ScalarProperty Name="zz" ColumnName="zz" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="xlsj" ColumnName="xlsj" />
+          <ScalarProperty Name="gzdm" ColumnName="gzdm" />
+          <ScalarProperty Name="hb" ColumnName="hb" />
+          <ScalarProperty Name="bzm" ColumnName="bzm" />
+          <ScalarProperty Name="BefBh" ColumnName="BefBh" />
+          <ScalarProperty Name="NowBh" ColumnName="NowBh" />
+          <ScalarProperty Name="wxyy" ColumnName="wxyy" />
+          <ScalarProperty Name="wxcs" ColumnName="wxcs" />
+          <ScalarProperty Name="syql" ColumnName="syql" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ycxxbSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.ycxxb)">
+        <MappingFragment StoreEntitySet="ycxxbSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="hm" ColumnName="hm" />
+          <ScalarProperty Name="zz" ColumnName="zz" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="zhgql" ColumnName="zhgql" />
+          <ScalarProperty Name="gqrq" ColumnName="gqrq" />
+          <ScalarProperty Name="sfyc" ColumnName="sfyc" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yhxxSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.yhxx)">
+        <MappingFragment StoreEntitySet="yhxxSet">
+          <ScalarProperty Name="kpbh" ColumnName="kpbh" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="hm" ColumnName="hm" />
+          <ScalarProperty Name="zz" ColumnName="zz" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+          <ScalarProperty Name="jdrq" ColumnName="jdrq" />
+          <ScalarProperty Name="gqcs" ColumnName="gqcs" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="jdczy" ColumnName="jdczy" />
+          <ScalarProperty Name="gqrq" ColumnName="gqrq" />
+          <ScalarProperty Name="xbzm" ColumnName="xbzm" />
+          <ScalarProperty Name="yhmm" ColumnName="yhmm" />
+          <ScalarProperty Name="bqzl" ColumnName="bqzl" />
+          <ScalarProperty Name="bqcs" ColumnName="bqcs" />
+          <ScalarProperty Name="yhlx" ColumnName="yhlx" />
+          <ScalarProperty Name="sdbj" ColumnName="sdbj" />
+          <ScalarProperty Name="fkrq" ColumnName="fkrq" />
+          <ScalarProperty Name="gqd" ColumnName="gqd" />
+          <ScalarProperty Name="zxh" ColumnName="zxh" />
+          <ScalarProperty Name="jdlx" ColumnName="jdlx" />
+          <ScalarProperty Name="yhkx" ColumnName="yhkx" />
+          <ScalarProperty Name="qtlx" ColumnName="qtlx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yyglSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.yygl)">
+        <MappingFragment StoreEntitySet="yyglSet">
+          <ScalarProperty Name="bh" ColumnName="bh" />
+          <ScalarProperty Name="ms" ColumnName="ms" />
+          <ScalarProperty Name="lx" ColumnName="lx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yysjSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.yysj)">
+        <MappingFragment StoreEntitySet="yysjSet">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="skcs" ColumnName="skcs" />
+          <ScalarProperty Name="skrq" ColumnName="skrq" />
+          <ScalarProperty Name="skje" ColumnName="skje" />
+          <ScalarProperty Name="skql" ColumnName="skql" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="bb" ColumnName="bb" />
+          <ScalarProperty Name="hh" ColumnName="hh" />
+          <ScalarProperty Name="sjkb" ColumnName="sjkb" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="gzzbh" ColumnName="gzzbh" />
+          <ScalarProperty Name="lstbz" ColumnName="lstbz" />
+          <ScalarProperty Name="bqbz" ColumnName="bqbz" />
+          <ScalarProperty Name="zfbz" ColumnName="zfbz" />
+          <ScalarProperty Name="fpbh" ColumnName="fpbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zxglSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.zxgl)">
+        <MappingFragment StoreEntitySet="zxglSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="zxh" ColumnName="zxh" />
+          <ScalarProperty Name="zxmc" ColumnName="zxmc" />
+          <ScalarProperty Name="dsdbh" ColumnName="dsdbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="czjlbSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.czjlb)">
+        <MappingFragment StoreEntitySet="czjlbSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="skrq" ColumnName="skrq" />
+          <ScalarProperty Name="skje" ColumnName="skje" />
+          <ScalarProperty Name="skql" ColumnName="skql" />
+          <ScalarProperty Name="fpbh" ColumnName="fpbh" />
+          <ScalarProperty Name="zfbz" ColumnName="zfbz" />
+          <ScalarProperty Name="jlyy" ColumnName="jlyy" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.Admin)">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkId" ColumnName="WorkId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AdminLevel" ColumnName="AdminLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

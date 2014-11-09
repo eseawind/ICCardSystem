@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Menu</title>
+    <script src="~/lib/ligerUI/js/plugins/ligerAccordion.js"></script>
+</head>
+<body>
+    <div id="accordion">
+        <div title="IC卡燃气用户资料管理">
+            <ul>
+                <li url="*">新户资料输入</li>
+                <li url="*">预卡资料管理</li>
+            </ul>
+        </div>
+        <div title="IC卡充值">
+            <ul>
+                <li url="~/SellCard/FindNewUser">新户售卡</li>
+                <li url="*">充  值</li>
+                <li url="*">申请IC卡号</li>
+                <li url="*">发卡充值</li>
+                <li url="*">预冲账处理</li>
+                <li url="*">故障处理</li>
+                <li url="~/PrintInvoice/Print">补打发票</li></ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#accordion").ligerAccordion();
+            $("#accordion li").click(function () {
+                var url = $(this).attr("url");
+                $("#mainContainer").load(url);
+            });
+            $('ul li').css('padding-left', '15px');
+        })
+    </script>
+</body>
+</html>

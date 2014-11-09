@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ICModelStoreContainer" CdmEntityContainer="ICModelContainer">
+    <EntitySetMapping Name="BqxxbSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.Bqxxb)">
+        <MappingFragment StoreEntitySet="BqxxbSet">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="bzm" ColumnName="bzm" />
+          <ScalarProperty Name="bcbqzl" ColumnName="bcbqzl" />
+          <ScalarProperty Name="ybql" ColumnName="ybql" />
+          <ScalarProperty Name="bqwc" ColumnName="bqwc" />
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bhIndexSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.bhIndex)">
+        <MappingFragment StoreEntitySet="bhIndexSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bqjzhSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.bqjzh)">
+        <MappingFragment StoreEntitySet="bqjzhSet">
+          <ScalarProperty Name="djbh" ColumnName="djbh" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+          <ScalarProperty Name="bql" ColumnName="bql" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+          <ScalarProperty Name="hh" ColumnName="hh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="czrySet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.czry)">
+        <MappingFragment StoreEntitySet="czrySet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="bh" ColumnName="bh" />
+          <ScalarProperty Name="xm" ColumnName="xm" />
+          <ScalarProperty Name="dm" ColumnName="dm" />
+          <ScalarProperty Name="opId" ColumnName="opId" />
+          <ScalarProperty Name="zcyy" ColumnName="zcyy" />
+          <ScalarProperty Name="FAgencyCode" ColumnName="FAgencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="djglSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.djgl)">
+        <MappingFragment StoreEntitySet="djglSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="yhlx" ColumnName="yhlx" />
+          <ScalarProperty Name="qj" ColumnName="qj" />
+          <ScalarProperty Name="ms" ColumnName="ms" />
+          <ScalarProperty Name="ckxl" ColumnName="ckxl" />
+          <ScalarProperty Name="yxl" ColumnName="yxl" />
+          <ScalarProperty Name="bx" ColumnName="bx" />
+          <ScalarProperty Name="gs" ColumnName="gs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hbjlSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.hbjl)">
+        <MappingFragment StoreEntitySet="hbjlSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="bzm" ColumnName="bzm" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+          <ScalarProperty Name="dqqm" ColumnName="dqqm" />
+          <ScalarProperty Name="dqbh" ColumnName="dqbh" />
+          <ScalarProperty Name="cxbz" ColumnName="cxbz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hmdSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.hmd)">
+        <MappingFragment StoreEntitySet="hmdSet">
+          <ScalarProperty Name="f_id" ColumnName="f_id" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="bql" ColumnName="bql" />
+          <ScalarProperty Name="hb" ColumnName="hb" />
+          <ScalarProperty Name="sdyh" ColumnName="sdyh" />
+          <ScalarProperty Name="yy" ColumnName="yy" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="sdczy" ColumnName="sdczy" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hmdjsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.hmdjs)">
+        <MappingFragment StoreEntitySet="hmdjsSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="jsrq" ColumnName="jsrq" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="jsyy" ColumnName="jsyy" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jdlxSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.jdlx)">
+        <MappingFragment StoreEntitySet="jdlxSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="jdlxId" ColumnName="jdlxId" />
+          <ScalarProperty Name="ms" ColumnName="ms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wxdjSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.wxdj)">
+        <MappingFragment StoreEntitySet="wxdjSet">
+          <ScalarProperty Name="wxdbh" ColumnName="wxdbh" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="yh" ColumnName="yh" />
+          <ScalarProperty Name="zz" ColumnName="zz" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="xlsj" ColumnName="xlsj" />
+          <ScalarProperty Name="gzdm" ColumnName="gzdm" />
+          <ScalarProperty Name="hb" ColumnName="hb" />
+          <ScalarProperty Name="bzm" ColumnName="bzm" />
+          <ScalarProperty Name="BefBh" ColumnName="BefBh" />
+          <ScalarProperty Name="NowBh" ColumnName="NowBh" />
+          <ScalarProperty Name="wxyy" ColumnName="wxyy" />
+          <ScalarProperty Name="wxcs" ColumnName="wxcs" />
+          <ScalarProperty Name="syql" ColumnName="syql" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ycxxbSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.ycxxb)">
+        <MappingFragment StoreEntitySet="ycxxbSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="hm" ColumnName="hm" />
+          <ScalarProperty Name="zz" ColumnName="zz" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="zhgql" ColumnName="zhgql" />
+          <ScalarProperty Name="gqrq" ColumnName="gqrq" />
+          <ScalarProperty Name="sfyc" ColumnName="sfyc" />
+          <ScalarProperty Name="rq" ColumnName="rq" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yhxxSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.yhxx)">
+        <MappingFragment StoreEntitySet="yhxxSet">
+          <ScalarProperty Name="kpbh" ColumnName="kpbh" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="hm" ColumnName="hm" />
+          <ScalarProperty Name="zz" ColumnName="zz" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+          <ScalarProperty Name="jdrq" ColumnName="jdrq" />
+          <ScalarProperty Name="gqcs" ColumnName="gqcs" />
+          <ScalarProperty Name="gqzl" ColumnName="gqzl" />
+          <ScalarProperty Name="jdczy" ColumnName="jdczy" />
+          <ScalarProperty Name="gqrq" ColumnName="gqrq" />
+          <ScalarProperty Name="xbzm" ColumnName="xbzm" />
+          <ScalarProperty Name="yhmm" ColumnName="yhmm" />
+          <ScalarProperty Name="bqzl" ColumnName="bqzl" />
+          <ScalarProperty Name="bqcs" ColumnName="bqcs" />
+          <ScalarProperty Name="yhlx" ColumnName="yhlx" />
+          <ScalarProperty Name="sdbj" ColumnName="sdbj" />
+          <ScalarProperty Name="fkrq" ColumnName="fkrq" />
+          <ScalarProperty Name="gqd" ColumnName="gqd" />
+          <ScalarProperty Name="zxh" ColumnName="zxh" />
+          <ScalarProperty Name="jdlx" ColumnName="jdlx" />
+          <ScalarProperty Name="yhkx" ColumnName="yhkx" />
+          <ScalarProperty Name="qtlx" ColumnName="qtlx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yyglSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.yygl)">
+        <MappingFragment StoreEntitySet="yyglSet">
+          <ScalarProperty Name="bh" ColumnName="bh" />
+          <ScalarProperty Name="ms" ColumnName="ms" />
+          <ScalarProperty Name="lx" ColumnName="lx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yysjSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.yysj)">
+        <MappingFragment StoreEntitySet="yysjSet">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="skcs" ColumnName="skcs" />
+          <ScalarProperty Name="skrq" ColumnName="skrq" />
+          <ScalarProperty Name="skje" ColumnName="skje" />
+          <ScalarProperty Name="skql" ColumnName="skql" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+          <ScalarProperty Name="bb" ColumnName="bb" />
+          <ScalarProperty Name="hh" ColumnName="hh" />
+          <ScalarProperty Name="sjkb" ColumnName="sjkb" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="gzzbh" ColumnName="gzzbh" />
+          <ScalarProperty Name="lstbz" ColumnName="lstbz" />
+          <ScalarProperty Name="bqbz" ColumnName="bqbz" />
+          <ScalarProperty Name="zfbz" ColumnName="zfbz" />
+          <ScalarProperty Name="fpbh" ColumnName="fpbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zxglSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.zxgl)">
+        <MappingFragment StoreEntitySet="zxglSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="zxh" ColumnName="zxh" />
+          <ScalarProperty Name="zxmc" ColumnName="zxmc" />
+          <ScalarProperty Name="dsdbh" ColumnName="dsdbh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="czjlbSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.czjlb)">
+        <MappingFragment StoreEntitySet="czjlbSet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ywbh" ColumnName="ywbh" />
+          <ScalarProperty Name="skrq" ColumnName="skrq" />
+          <ScalarProperty Name="skje" ColumnName="skje" />
+          <ScalarProperty Name="skql" ColumnName="skql" />
+          <ScalarProperty Name="fpbh" ColumnName="fpbh" />
+          <ScalarProperty Name="zfbz" ColumnName="zfbz" />
+          <ScalarProperty Name="jlyy" ColumnName="jlyy" />
+          <ScalarProperty Name="czy" ColumnName="czy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="IsTypeOf(ICModel.Admin)">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkId" ColumnName="WorkId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AdminLevel" ColumnName="AdminLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

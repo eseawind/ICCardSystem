@@ -1,0 +1,81 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title></title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+    <div id="container"class="divFont">
+        <div id="newCardCharge" style="clear:both;margin-left:200px; margin-top:100px;  width:900px">
+            <label>新卡充值</label>
+            <br/>
+            <label>用户信息</label>
+            <br />
+            <br />
+            <table id="table2">
+                <tr>
+                    <td>业务编号</td>
+                    <td><input id="ywbh" type="text" name="ywbh" disabled="disabled" value="@ViewBag.ywbh" /></td>
+                    <td>姓名</td>
+                    <td><input id="hm" type="text" name="hm" disabled="disabled" value="@ViewBag.hm" /></td>
+                </tr>
+                <tr>
+                    <td>家庭住址</td>
+                    <td><input id="zz" type="text" name="zz" style="width:250px" disabled="disabled" value="@ViewBag.zz" /></td>
+                </tr>
+                <tr>
+                    <td>用户类型</td>
+                    <td><input id="yhlx" type="text" name="yhlx" disabled="disabled" value="@ViewBag.yhlx" /></td>
+                    <td>电话</td>
+                    <td><input id="tel" type="text" name="tel" value="@ViewBag.tel" disabled="disabled" /></td>
+                </tr>
+
+                <tr></tr>
+                <tr>
+                    <td>购气次数</td>
+                    <td><input id="gqcs" type="text" name="gqcs" value="@ViewBag.gqcs" disabled="disabled" /></td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+
+            <label>购买信息</label>
+            <br />
+            <br />
+            <table id="table3">
+                <tr>
+                    <td>购气量</td>
+                    <td><input id="gql" type="text" name="gql" onkeyup="javascript:textChanged()" /></td>
+                    <td>煤气单价</td>
+                    <td><input id="qj" type="text" name="qj" value="@ViewBag.qj" disabled="disabled" /></td>
+                </tr>
+                <tr>
+                    <td>交纳金额</td>
+                    <td><input id="moneyTotal" type="text" name="moneyTotal" /></td>
+                    <td>购气金额</td>
+                    <td><input id="qjMoney" type="text" name="qjMoney" disabled="disabled" /></td>
+                </tr>
+            </table>
+
+            <input type="button" value="执行售卡" id="submitBtn1" style="width:70px" />
+            <input type="button" value="读卡" id="submitBtn2" style="margin-left: 60px; margin-right: 60px; width: 70px" />
+            <input type="button" value="返回" id="submitBtn3" style="width:70px" />
+        </div>
+    </div>
+
+        <script type="text/javascript">
+            function textChanged() {
+               
+                var price = $("#qj").val();
+                var count = $("#gql").val();
+                $("#qjMoney").val(price * count);
+            }
+
+        </script>
+
+</body>
+</html>

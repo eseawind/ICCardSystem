@@ -1,0 +1,41 @@
+﻿.error {
+    color: red;
+}
+
+/*外漏检测*/
+#wl {
+    width: 800px;
+    margin-left: 0;
+    padding: 0 0 0 0;
+    margin: 10px 0 0 0;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+#detect {
+    width: 600px;
+    float: left;
+}
+#result {
+    width: 900px;
+}
+
+
+
+.divFont {
+    font-size: 16px;
+}
+
+#maingrid {
+
+    width:900px;
+    padding: 0 0 0 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+
+}
+
+#maingrid2 {
+    margin-top: 40px;
+}

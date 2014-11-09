@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Top</title>
+    <style type="text/css">
+        #nav {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 100px;
+            background-color: #CCCCFF;
+        }
+
+        #nav_title {
+            margin: 0 auto;
+            width: 400px;
+
+        }
+
+        #nav_user {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+      
+        }
+    </style>
+
+</head>
+<body>
+    <div id="nav">
+        <div id="nav_user"><b><font color="#FF2D2D" >@ViewBag.username</font></b> &nbsp; @Html.ActionLink("退出", "Logout", "Admin")</div>
+        <div id="nav_title"><font face="宋体"  size="6pt"  style="text-align:center">蓝焰IC卡管理系统</font></div>
+    </div>
+</body>
+</html>
