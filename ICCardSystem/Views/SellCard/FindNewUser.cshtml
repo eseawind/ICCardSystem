@@ -91,7 +91,7 @@
                 </tr>
             </table>
             <input type="button" value="修改" id="submitBtn1" style="width:70px" />
-            <input type="button" value="新户售卡" id="submitBtn2" style="margin-left: 60px; margin-right: 60px; width: 70px" />
+            <input type="button" value="新户售卡" id="submitBtn2" style="margin-left: 60px; margin-right: 60px; width: 100px" />
             <input type="button" value="返回" id="submitBtn3" style="width:70px" />
         </div>
 
@@ -158,7 +158,7 @@
         function f_initGrid() {
             g=manager=$("#maingrid").ligerGrid({
                     columns: [
-                        { display: '地址', name: 'zz' },
+                        { display: '地址', name: 'zz', width:300},
                         { display: '卡片编号', name: 'kpbh' },
                         { display: '户名', name: 'hm',width:100 },
                         { display: '电话', name: 'tel' },

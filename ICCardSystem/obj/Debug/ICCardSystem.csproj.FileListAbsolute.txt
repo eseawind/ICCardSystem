@@ -82,3 +82,45 @@ d:\Documents\Visual Studio 2013\Projects\Project8\ICCardSystem\bin\zh-Hans\Syste
 d:\Documents\Visual Studio 2013\Projects\Project8\ICCardSystem\obj\Debug\ICCardSystem.csprojResolveAssemblyReference.cache
 d:\Documents\Visual Studio 2013\Projects\Project8\ICCardSystem\obj\Debug\ICCardSystem.dll
 d:\Documents\Visual Studio 2013\Projects\Project8\ICCardSystem\obj\Debug\ICCardSystem.pdb
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\ICCardSystem.dll.config
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\ICCardSystem.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\ICCardSystem.pdb
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\obj\Debug\ICCardSystem.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\obj\Debug\ICCardSystem.dll
+C:\Users\Administrator\Desktop\Project8\ICCardSystem\obj\Debug\ICCardSystem.pdb
