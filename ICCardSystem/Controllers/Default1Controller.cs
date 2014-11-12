@@ -13,6 +13,9 @@ namespace ICCardSystem.Controllers
 
         public ActionResult Index()
         {
+          
+
+
             return View();
         }
 
