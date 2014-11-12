@@ -122,6 +122,7 @@
     <Compile Include="Common\ValidateTools.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ChargeController.cs" />
+    <Compile Include="Controllers\Default1Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PrintInvoiceController.cs" />
     <Compile Include="Controllers\SellCardController.cs" />
