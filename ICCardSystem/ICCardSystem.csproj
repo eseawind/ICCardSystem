@@ -121,8 +121,8 @@
     <Compile Include="Common\CryptoTools.cs" />
     <Compile Include="Common\ValidateTools.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\ChargeController.cs" />
-    <Compile Include="Controllers\Default1Controller.cs" />
+    <Compile Include="Controllers\ApplyICCardNumberController.cs" />
+    <Compile Include="Controllers\RechargeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PrintInvoiceController.cs" />
     <Compile Include="Controllers\SellCardController.cs" />
@@ -655,8 +655,9 @@
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\PrintInvoice\Print.cshtml" />
     <Content Include="Views\SellCard\FindNewUser.cshtml" />
-    <Content Include="Views\Charge\Index.cshtml" />
+    <Content Include="Views\Recharge\Index.cshtml" />
     <Content Include="Views\SellCard\NewCardCharge.cshtml" />
+    <Content Include="Views\ApplyICCardNumber\ICCardNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

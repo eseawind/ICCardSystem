@@ -5,7 +5,12 @@
 <html>
 <head>
     <title></title>
+    <link href="~/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/lib/ligerUI/js/core/base.js"></script>
+    <script src="~/lib/ligerUI/js/plugins/ligerDrag.js" type="text/javascript"></script> 
+    <script src="~/lib/ligerUI/js/plugins/ligerDialog.js" type="text/javascript"></script>
+    <script src="~/lib/ligerUI/js/ligerui.all.js"></script> 
 </head>
 
 <body>
@@ -60,7 +65,11 @@
                     <td><input id="qjMoney" type="text" name="qjMoney" disabled="disabled" /></td>
                 </tr>
             </table>
-
+            <br/>
+            <label>售卡后IC卡内信息</label> <input id="ICCardInfo" type="text" name="ICCardInfo" Style="width:300px"   hidden/>
+            <br/>
+            <br />
+            <br />
             <input type="button" value="执行售卡" id="submitBtn1" style="width: 100px" />
             <input type="button" value="读卡" id="submitBtn2" style="margin-left: 60px; margin-right: 60px; width: 70px" />
             <input type="button" value="退出" id="submitBtn3" style="width:70px" />
@@ -74,6 +83,21 @@
                 var count = $("#gql").val();
                 $("#qjMoney").val(price * count);
             }
+
+            $("#submitBtn1").click(function () {
+                var returnMoney = $("#moneyTotal").val() - $("#qjMoney").val();
+                var gql = $("#gql").val();  
+
+                    alert("找零:  " + returnMoney + "元");
+
+                    $("#ICCardInfo").show();
+                    $("#ICCardInfo").val("密码传递卡,卡内气量为" + gql);
+            })
+
+            $("#submitBtn3").click(function () {
+                var url = "../SellCard/FindNewUser";
+                $("#container").load(url);
+            })
 
         </script>
 

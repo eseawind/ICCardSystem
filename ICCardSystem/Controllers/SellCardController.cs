@@ -70,22 +70,37 @@ namespace ICCardSystem.Controllers
                 ywbh = ywbhNum,
             };
             baseDAL.AddItem<bhIndex>(bhIndex);
-            var newUser = baseDAL.Get<yhxx>().FirstOrDefault(c => c.kpbh == newYhxx.kpbh);
-            newUser.hm = newYhxx.hm;
-            newUser.tel = newYhxx.tel;
-            newUser.ywbh = ywbhNum;
-            newUser.gqcs = 1;
-            Session["ywbh"] = newUser.ywbh;
-            Session["hm"] = newUser.hm;
-            Session["zz"] = newUser.zz;
-            Session["yhlx"] = newUser.yhlx;
-            Session["tel"] = newUser.tel;
-            Session["gqcs"] = newUser.gqcs;
-            baseDAL.SaveAllChanges();
+            if (newYhxx.hm != null) {
+                var newUser = baseDAL.Get<yhxx>().FirstOrDefault(c => c.kpbh == newYhxx.kpbh);
+                newUser.hm = newYhxx.hm;
+                newUser.tel = newYhxx.tel;
+                newUser.ywbh = ywbhNum;
+                newUser.gqcs = 1;
+                Session["ywbh"] = newUser.ywbh;
+                Session["hm"] = newUser.hm;
+                Session["zz"] = newUser.zz;
+                Session["yhlx"] = newUser.yhlx;
+                Session["tel"] = newUser.tel;
+                Session["gqcs"] = newUser.gqcs;
+                baseDAL.SaveAllChanges();
+
+            }
+            else
+            {
+                Session["ywbh"] = ywbhNum;
+                Session["hm"] = null;
+                Session["zz"] = null;
+                Session["yhlx"] = newYhxx.yhlx;
+                Session["tel"] = null;
+                Session["gqcs"] = 0;
+
+
+            }
+
             
 
             
-            return Json(newUser.ywbh);
+            return Json(ywbhNum);
 
         }
   

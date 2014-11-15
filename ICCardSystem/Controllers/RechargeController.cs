@@ -6,16 +6,13 @@ using System.Web.Mvc;
 
 namespace ICCardSystem.Controllers
 {
-    public class Default1Controller : Controller
+    public class RechargeController : Controller
     {
         //
-        // GET: /Default1/
+        // GET: /Recharge/
 
         public ActionResult Index()
         {
-          
-
-
             return View();
         }
 
