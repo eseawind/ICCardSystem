@@ -122,6 +122,8 @@
     <Compile Include="Common\ValidateTools.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ApplyICCardNumberController.cs" />
+    <Compile Include="Controllers\ClearLastRechargeController.cs" />
+    <Compile Include="Controllers\FaKaRechargeController.cs" />
     <Compile Include="Controllers\RechargeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PrintInvoiceController.cs" />
@@ -655,9 +657,11 @@
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\PrintInvoice\Print.cshtml" />
     <Content Include="Views\SellCard\FindNewUser.cshtml" />
-    <Content Include="Views\Recharge\Index.cshtml" />
     <Content Include="Views\SellCard\NewCardCharge.cshtml" />
     <Content Include="Views\ApplyICCardNumber\ICCardNumber.cshtml" />
+    <Content Include="Views\Recharge\chongzhi.cshtml" />
+    <Content Include="Views\FaKaRecharge\fakaRecharge.cshtml" />
+    <Content Include="Views\ClearLastRecharge\HandleWrongDeal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

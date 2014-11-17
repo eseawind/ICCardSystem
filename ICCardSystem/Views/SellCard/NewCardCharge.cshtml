@@ -66,7 +66,7 @@
                 </tr>
             </table>
             <br/>
-            <label>售卡后IC卡内信息</label> <input id="ICCardInfo" type="text" name="ICCardInfo" Style="width:300px"   hidden/>
+            <label>售卡后IC卡内信息</label> <input id="ICCardInfo" type="text" name="ICCardInfo" Style="width:250px"   hidden/>
             <br/>
             <br />
             <br />
@@ -85,6 +85,13 @@
             }
 
             $("#submitBtn1").click(function () {
+                var ywbh = $("#ywbh").val();
+                var gql = $("#gql").val();
+                var postData = {
+                    ywbh: ywbh,
+                    gqzl: gql
+                };
+                $.post("../Recharge/chongzhi", postData, getCallback);
                 var returnMoney = $("#moneyTotal").val() - $("#qjMoney").val();
                 var gql = $("#gql").val();  
 
@@ -93,6 +100,9 @@
                     $("#ICCardInfo").show();
                     $("#ICCardInfo").val("密码传递卡,卡内气量为" + gql);
             })
+            function getCallback(data) {
+
+            }
 
             $("#submitBtn3").click(function () {
                 var url = "../SellCard/FindNewUser";
